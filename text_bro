@@ -1,8 +1,8 @@
 require 'twilio-ruby'
 
 # Your Twilio credentials
-account_sid = 'account_sid_goes_here'
-auth_token = 'auth_token_goes_here'
+account_sid = 'your_account_sid'
+auth_token = 'your_auth_token'
 
 # Create a Twilio client
 client = Twilio::REST::Client.new(account_sid, auth_token)
@@ -21,4 +21,4 @@ message = client.messages.create(
   body: 'bro'
 )
 
-puts "WhatsApp message sent with SID: #{message.sid}"
+puts "WhatsApp message sent!"
